@@ -12,13 +12,12 @@ task_list = []
 el_count = int(input("Введите количество элементов списка "))
 i = 0
 while i < el_count:
-    task_list.append(input("Введите элемент списка "))
+    task_list.append(input("Введите элемент списка ").split())
     i += 1
 
 print(task_list)  # для просмотра списка
-el = 0
-for el in range(int(len(task_list) / 2)):
-    task_list[el], task_list[el + 1] = task_list[el + 1], task_list[el]
-    el += 2
+
+for el in range(1, len(task_list), 2):
+    task_list[el - 1], task_list[el] = task_list[el], task_list[el - 1]
 
 print(task_list)
