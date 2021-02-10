@@ -4,6 +4,7 @@
 # Функция должна принимать параметры как именованные аргументы.
 # Реализовать вывод данных о пользователе одной строкой.
 
+<<<<<<< HEAD
 # def print_data_user(name, surname, birthday, city, email, phone):
 #     return  f'Name - {name}, surname - {surname}, birthday - {birthday}, city - {city},' \
 #             f'emai - {email}, phone - {phone}'
@@ -15,3 +16,9 @@ def print_data_user(**kwargs):
 
 
 print(print_data_user(name = input('Введите имя: '), surname = input('Введите фамилию: '), birthday = input('Введите год рождения: '), city = input('Введите ваш город: '), email = input('Введите email: '), phone = input('Введите номер телефона: ')))
+=======
+def data_user(n, sn, b_d, c, e, t):
+    print(n, sn, b_d, c, e, t)
+
+data_user(n = 'name', sn = 'surname', b_d = 'birthday', c = 'city', e = 'e-mail', t = 'phone number')
+>>>>>>> less_3

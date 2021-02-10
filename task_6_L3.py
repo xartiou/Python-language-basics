@@ -6,6 +6,7 @@
 # Сделать вывод исходной строки, но каждое слово должно начинаться с заглавной буквы.
 # Необходимо использовать написанную ранее функцию int_func().
 
+<<<<<<< HEAD
 # word = input('Введите слово маленькими латинскими буквами : ')
 #
 # def int_func(word):
@@ -43,3 +44,21 @@ print(' '.join(s))
 #             print(word.title() if chars == len(word) else f"{word} - only small latin letters!")
 #
 # int_func()
+=======
+word = input('Введите слово маленькими латинскими буквами : ')
+
+
+def int_func(word):
+    word = word.title()
+    return word
+
+
+print(int_func(word))
+
+string = input().split()
+res_string = []
+
+for word in string:
+    res_string.append(int_func(word))  # добавляем нашу функцию
+print(' '.join(res_string))  # возвращаем строку
+>>>>>>> less_3

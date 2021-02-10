@@ -4,6 +4,7 @@
 # При решении задания необходимо обойтись без встроенной функции возведения числа в степень.
 
 def my_func(x, y):
+<<<<<<< HEAD
     try:
         x = float(x)
         y = int(y)
@@ -16,3 +17,9 @@ def my_func(x, y):
     return x ** y
 
 print(my_func(10, -4))
+=======
+    return 1 / (x ** abs(y))
+
+
+print(my_func(2, -2))
+>>>>>>> less_3

@@ -2,6 +2,7 @@
 # которая принимает три позиционных аргумента,
 # и возвращает сумму наибольших двух аргументов.
 
+<<<<<<< HEAD
 # def my_func(a, b, c):
 #     if a > c and b > c:
 #         return a + b
@@ -36,3 +37,15 @@ print(my_function(10, 15, 8))
 # my_function = lambda a, b, c: sum(sorted([a, b, c])[1:])
 #
 # print(my_function(1978,2,1))
+=======
+def my_func(a, b, c):
+    if a > c and b > c:
+        return a + b
+    elif a > b and c > b:
+        return a + c
+    else:
+        return b + c
+
+
+print(my_func(15, 5, 68))
+>>>>>>> less_3
