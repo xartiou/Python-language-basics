@@ -4,7 +4,15 @@
 # При решении задания необходимо обойтись без встроенной функции возведения числа в степень.
 
 def my_func(x, y):
-    return 1 / (x ** abs(y))
+    try:
+        x = float(x)
+        y = int(y)
+    except ValueError:
+        print('Нужно только действительные и целые числа')
+        return
+    if x <= 0 or y >= 0:
+        print('Х - должен быть положительный, а Y - отрицательный')
+        return
+    return x ** y
 
-
-print(my_func(2, -2))
+print(my_func(10, -4))

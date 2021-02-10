@@ -6,19 +6,40 @@
 # Сделать вывод исходной строки, но каждое слово должно начинаться с заглавной буквы.
 # Необходимо использовать написанную ранее функцию int_func().
 
-word = input('Введите слово маленькими латинскими буквами : ')
-
+# word = input('Введите слово маленькими латинскими буквами : ')
+#
+# def int_func(word):
+#     word = word.title()
+#     return word
+#
+#
+# print(int_func(word))
+#
+# string = input().split()
+# res_string = []
+#
+# for word in string:
+#     res_string.append(int_func(word))  # добавляем нашу функцию
+# print(' '.join(res_string))  # возвращаем строку
 
 def int_func(word):
-    word = word.title()
-    return word
+    return word[0].upper() + word[1:].lower()
 
 
-print(int_func(word))
+s = input().split()
+for i, word in enumerate(s):
+    if not word.isascii() or not word.isalpha() or not word.islower():
+        print('error!')
+    else:
+        s[i] = int_func(word)
+print(' '.join(s))
 
-string = input().split()
-res_string = []
-
-for word in string:
-    res_string.append(int_func(word))  # добавляем нашу функцию
-print(' '.join(res_string))  # возвращаем строку
+# def int_func():
+#     for word in input('Enter words with a space (lower latin script):\n').split():
+#         chars = 0
+#         for char in word:
+#             if 97 <= ord(char) <= 122:
+#                 chars += 1
+#             print(word.title() if chars == len(word) else f"{word} - only small latin letters!")
+#
+# int_func()
