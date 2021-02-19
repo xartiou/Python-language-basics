@@ -19,16 +19,34 @@ class Pen(Stationery):
     def __init__(self, title):
         super().__init__(title)
 
+<<<<<<< HEAD
+=======
+    def drawning(self):
+        print(f'Рисует {self.title}')
+
+>>>>>>> less_6
 
 class Pencil(Stationery):
     def __init__(self, title):
         super().__init__(title)
 
+<<<<<<< HEAD
+=======
+    def drawning(self):
+        print(f'Рисует {self.title}')
+
+>>>>>>> less_6
 
 class Handle(Stationery):
     def __init__(self, title):
         super().__init__(title)
 
+<<<<<<< HEAD
+=======
+    def drawning(self):
+        print(f'Рисует {self.title}')
+
+>>>>>>> less_6
 
 p = Pen('pen')
 pl = Pencil('pencil')
